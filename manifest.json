@@ -1,7 +1,7 @@
 {
   "name": "cortex-plugin-dev-onboarding",
-  "version": "1.0.0",
-  "description": "Developer Onboarding Accelerator — Provision dev environment, clone repos, install deps, create personalized onboarding guide",
+  "version": "1.0.1",
+  "description": "Developer Onboarding Accelerator \u2014 Provision dev environment, clone repos, install deps, create personalized onboarding guide",
   "kind": "esm",
   "entryPoint": "mod.ts",
   "runtime": "deno",
@@ -9,7 +9,10 @@
   "license": "MIT",
   "repository": "https://github.com/CortexPrism/cortex-plugin-dev-onboarding",
   "homepage": "https://cortexprism.io/marketplace/plugins/dev-onboarding",
-  "capabilities": ["tools", "network:fetch"],
+  "capabilities": [
+    "tools",
+    "network:fetch"
+  ],
   "tools": [
     {
       "name": "devonboard_provision",
@@ -33,6 +36,13 @@
     }
   ],
   "dependencies": {},
-  "peerDependencies": { "cortex": ">=1.0.0" },
-  "aiDisclosure": { "tools": ["Kilo (DeepSeek) — batch scaffold"], "humanReview": true }
+  "peerDependencies": {
+    "cortex": ">=0.51.0"
+  },
+  "aiDisclosure": {
+    "tools": [
+      "Kilo (DeepSeek) \u2014 batch scaffold"
+    ],
+    "humanReview": true
+  }
 }
